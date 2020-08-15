@@ -8,8 +8,6 @@
 
 Cli.Mail is an easy to use .Net CLI tool for sending emails.
 
-To be continued...
-
 ## Install
 
 `dotnet tool install -g climail`
