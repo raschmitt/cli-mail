@@ -16,7 +16,7 @@ To be continued...
 
 ## Install
 
-To be continued...
+`dotnet tool install -g climail`
 
 ## How to use
 
