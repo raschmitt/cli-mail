@@ -27,7 +27,7 @@ Currently Cli.Mail only works for sending emails from gmail accounts, and you ha
 ### Sample usage
 
 ```
-climail -u mark@gmail.com -p P@assword1234 -r jack@outlook.com.br -s "Regards" -m "Hey Jack, how Are you doing?"
+climail -u mark@gmail.com -p P@assword1234 -r jack@outlook.com -s "Regards" -m "Hey Jack, how Are you doing?"
 ```
 
 ### Parameters
