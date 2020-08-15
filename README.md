@@ -16,11 +16,21 @@ To be continued...
 
 ## How to use
 
-To be continued...
-
 ### Sample
 
-To be continued...
+`climail -u mark@gmail.com -p P@assword1234 -r jack@outlook.com.br -s "Regards" -m "Hey Jack, how Are you doing"`
+
+### Parameters
+
+| Parameter | Description | Required |
+| --- | --- | --- |
+| -u, --username | Email from where the message will be sent | Yes |
+| -p, --password | Email account password | Yes |
+| -r, --recipient  | Email recipient | Yes |
+| -s, --subject  | Email recipient | Yes |
+| -m, --message     | Email message | Yes |
+| --help     | Display the help screen | No |
+| --version     | Displays version information | Yes |
 
 ## Constributions
 
