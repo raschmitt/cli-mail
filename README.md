@@ -7,15 +7,19 @@ To be continued...
 
 ## Dependencies
 
+To be continued...
 
 ## Install
 
+To be continued...
 
 ## How to use
 
+To be continued...
 
 ### Sample
 
+To be continued...
 
 ## Constributions
 
