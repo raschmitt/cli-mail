@@ -1,0 +1,30 @@
+name: Nuget Deploy
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+    - '**/README.md'
+    - '**/*.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+
+    - name: Generate Nuget package
+      run: dotnet pack
+      working-directory: DateOverride
+
+    - name: Deploy to nuget.org
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_DEPLOY_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
+      working-directory: DateOverride/DateOverride/bin/Debug
