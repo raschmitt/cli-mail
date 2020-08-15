@@ -4,11 +4,17 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
 
+        <Authors>Rogerio Schmitt</Authors>
+        <Description>.Net tool for sending emails via command line</Description>
+        <PackageIconUrl>https://i.imgur.com/V9XHUfD.png</PackageIconUrl>
+        <PackageId>Cli.Mail</PackageId>
+        <PackageProjectUrl>https://github.com/raschmitt/cli-mail</PackageProjectUrl>
+        <PackageTags>Email CLI DotNet-Tool</PackageTags>
         <PackAsTool>true</PackAsTool>
         <PackageId>CliMail</PackageId>
         <ToolCommandName>climail</ToolCommandName>
-        <PackageOutputPath>./nupkg</PackageOutputPath>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
