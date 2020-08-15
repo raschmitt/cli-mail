@@ -23,8 +23,8 @@ jobs:
 
     - name: Generate Nuget package
       run: dotnet pack
-      working-directory: DateOverride
+      working-directory: Cli.Mail
 
     - name: Deploy to nuget.org
       run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_DEPLOY_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
-      working-directory: DateOverride/DateOverride/bin/Debug
+      working-directory: Cli.Mail/Cli.mail/bin/Debug
