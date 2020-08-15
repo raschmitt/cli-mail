@@ -5,7 +5,7 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
 
         <Authors>Rogerio Schmitt</Authors>
-        <Description>.Net tool for sending emails via command line</Description>
+        <Description>Simple CLI tool for sending e-mails</Description>
         <PackageIconUrl>https://i.imgur.com/V9XHUfD.png</PackageIconUrl>
         <PackageId>Cli.Mail</PackageId>
         <PackageProjectUrl>https://github.com/raschmitt/cli-mail</PackageProjectUrl>
@@ -13,7 +13,7 @@
         <PackAsTool>true</PackAsTool>
         <PackageId>CliMail</PackageId>
         <ToolCommandName>climail</ToolCommandName>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
