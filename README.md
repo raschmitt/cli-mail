@@ -20,7 +20,7 @@ Currently Cli.Mail only works for sending emails from gmail accounts, and you ha
 
 1. Go to your ([Google Account](https://myaccount.google.com/)).
 2. On the left navigation panel, click `Security`.
-3. On the bottom of the page, in the Less secure app access panel, click on `Turn on access` and turn it on.
+3. On the bottom of the page, in the Less secure app access section, click on `Turn on access` and turn it on.
 
 ### Sample usage
 
