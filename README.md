@@ -18,7 +18,7 @@ To be continued...
 
 ### Sample
 
-`climail -u mark@gmail.com -p P@assword1234 -r jack@outlook.com.br -s "Regards" -m "Hey Jack, how Are you doing"`
+`climail -username mark@gmail.com -password P@assword1234 -recipient jack@outlook.com.br -subject "Regards" -message "Hey Jack, how Are you doing"`
 
 ### Parameters
 
@@ -30,7 +30,7 @@ To be continued...
 | -s, --subject  | Email recipient | Yes |
 | -m, --message     | Email message | Yes |
 | --help     | Display the help screen | No |
-| --version     | Displays version information | Yes |
+| --version     | Displays version information | No |
 
 ## Constributions
 
