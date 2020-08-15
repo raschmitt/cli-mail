@@ -1,0 +1,32 @@
+name: Mutation Tests
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  build:
+
+    runs-on: windows-latest 
+    defaults:
+      run:
+        working-directory: Cli.Mail
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+      
+    - name: Build
+      run: dotnet build
+      
+    - name: Install Stryker
+      run: dotnet tool install -g dotnet-stryker
+            
+    - name: Run mutations
+      run: dotnet stryker --reporters "['dashboard']" --dashboard-api-key ${{ secrets.STRYKER_DASHBOARD_API_KEY }} -project github.com/raschmitt/date-override -version master
+      working-directory: Cli.Mail/Cli.Mail.Tests
