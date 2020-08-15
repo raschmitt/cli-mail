@@ -14,7 +14,7 @@ Cli.Mail is an easy to use .Net CLI tool for sending emails.
 
 ## How to use
 
-Currently Cli.Mail only works for sending emails from gmail accounts.
+Currently Cli.Mail only works for sending emails from gmail accounts, and you have to enable access form less secure apps for it to work properly.
 
 ### Enabling less secure apps in gmail
 
