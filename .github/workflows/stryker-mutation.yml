@@ -28,5 +28,5 @@ jobs:
       run: dotnet tool install -g dotnet-stryker
             
     - name: Run mutations
-      run: dotnet stryker --reporters "['dashboard']" --dashboard-api-key ${{ secrets.STRYKER_DASHBOARD_API_KEY }} -project github.com/raschmitt/date-override -version master
+      run: dotnet stryker --reporters "['dashboard']" --dashboard-api-key ${{ secrets.STRYKER_DASHBOARD_API_KEY }} -project github.com/raschmitt/cli-mail -version master
       working-directory: Cli.Mail/Cli.Mail.Tests
