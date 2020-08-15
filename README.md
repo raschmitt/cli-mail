@@ -22,7 +22,7 @@ Currently Cli.Mail only works for sending emails from gmail accounts.
 2. On the left navigation panel, click `Security`.
 3. On the bottom of the page, in the Less secure app access panel, click on `Turn on access` and turn it on.
 
-### Sample
+### Sample usage
 
 `climail -u mark@gmail.com -p P@assword1234 -r jack@outlook.com.br -s "Regards" -m "Hey Jack, how Are you doing"`
 
