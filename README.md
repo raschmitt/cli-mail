@@ -1,7 +1,7 @@
 
 # Cli.Mail <img src="https://i.imgur.com/V9XHUfD.png" align='right' />
 
-.NET CLI tool for sending emails.
+Cli.Mail is an easy to use .NET CLI tool for sending emails.
 
 To be continued...
 
