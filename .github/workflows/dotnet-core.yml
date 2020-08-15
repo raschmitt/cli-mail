@@ -1,0 +1,36 @@
+name: .NET Core - Build & Test
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+    - '**/README.md'
+    - '**/*.yml'
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-latest 
+    defaults:
+      run:
+        working-directory: DateOverride     
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+      
+    - name: Install dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+            
+    - name: Test
+      run: dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=../lcov /p:CopyLocalLockFileAssemblies=true
