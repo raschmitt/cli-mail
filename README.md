@@ -16,9 +16,17 @@ To be continued...
 
 ## How to use
 
+Currently Cli.Mail only works for sending emails from gmail accounts.
+
+### Enabling less secure apps in gmail
+
+1. Go to your ([Google Account](https://myaccount.google.com/)).
+2. On the left navigation panel, click `Security`.
+3. On the bottom of the page, in the Less secure app access panel, click on `Turn on access` and turn it on.
+
 ### Sample
 
-`climail -username mark@gmail.com -password P@assword1234 -recipient jack@outlook.com.br -subject "Regards" -message "Hey Jack, how Are you doing"`
+`climail -u mark@gmail.com -p P@assword1234 -r jack@outlook.com.br -s "Regards" -m "Hey Jack, how Are you doing"`
 
 ### Parameters
 
