@@ -42,6 +42,6 @@ climail -u mark@gmail.com -p P@assword123 -r jack@icloud.com -s "Regards" -m "Hi
 | --help     | Display the help screen | No |
 | --version     | Displays version information | No |
 
-## Constributions
+## Contributions
 
   Contributions and feature requests are always welcome.
