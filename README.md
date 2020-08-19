@@ -4,6 +4,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/raschmitt/cli-mail/.NET%20Core%20-%20Build%20&%20Test?label=Build%20%26%20Test&style=flat-square)](https://github.com/raschmitt/cli-mail/actions?query=workflow%3A%22.NET+Core+-+Build+%26+Test%22)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/raschmitt/cli-mail/Nuget%20Deploy?label=Deploy&style=flat-square)](https://github.com/raschmitt/cli-mail/actions?query=workflow%3A%22Nuget+Deploy%22)
 [![Codecov](https://img.shields.io/codecov/c/github/raschmitt/cli-mail?style=flat-square)](https://codecov.io/gh/raschmitt/cli-mail)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fraschmitt%2Fcli-mail%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/raschmitt/cli-mail/master)
 [![Nuget](https://img.shields.io/nuget/v/CliMail?label=Nuget&style=flat-square)](https://www.nuget.org/packages/CliMail/)
 [![Nuget](https://img.shields.io/nuget/dt/CliMail?color=Blue&label=Downloads&style=flat-square)](https://www.nuget.org/stats/packages/CliMail?groupby=Version)
 
