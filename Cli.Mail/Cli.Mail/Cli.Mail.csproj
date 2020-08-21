@@ -5,7 +5,7 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
 
         <Authors>Rogerio Schmitt</Authors>
-        <Description>Simple CLI tool for sending e-mails</Description>
+        <Description>CLI tool for sending e-mails</Description>
         <PackageIconUrl>https://i.imgur.com/V9XHUfD.png</PackageIconUrl>
         <PackageId>Cli.Mail</PackageId>
         <PackageProjectUrl>https://github.com/raschmitt/cli-mail</PackageProjectUrl>
@@ -13,13 +13,14 @@
         <PackAsTool>true</PackAsTool>
         <PackageId>CliMail</PackageId>
         <ToolCommandName>climail</ToolCommandName>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.8.0" />
       <PackageReference Include="MailKit" Version="2.8.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" />
       <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
     </ItemGroup>
 
@@ -27,6 +28,7 @@
       <Compile Remove="nupkg\**" />
       <Compile Remove="Models\Message.cs" />
       <Compile Remove="Models\User.cs" />
+      <Compile Remove="Services\IMailService.cs" />
     </ItemGroup>
 
     <ItemGroup>

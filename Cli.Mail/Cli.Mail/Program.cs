@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using Cli.Mail.Models;
 using Cli.Mail.Services;
+using Cli.Mail.Wrappers;
 using CommandLine;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Cli.Mail
 {
@@ -16,7 +18,13 @@ namespace Cli.Mail
         
             static void RunOptions(MailOptions options)
             { 
-                var mailService = new MailService(options);
+                var serviceProvider = new ServiceCollection()
+                    .AddSingleton<ISmtpClientWrapper, SmtpClientWrapper>()
+                    .BuildServiceProvider();
+
+                var client = serviceProvider.GetService<ISmtpClientWrapper>();
+                
+                var mailService = new MailService(options, client);
 
                 mailService.Send().Wait();
             }

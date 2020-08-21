@@ -1,19 +1,18 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Cli.Mail.Models;
-using MailKit.Net.Smtp;
+using Cli.Mail.Wrappers;
 using MimeKit;
 
 namespace Cli.Mail.Services
 {
-    public class MailService : IMailService, IDisposable
+    public class MailService
     {
-        private readonly SmtpClient _client;
+        private readonly ISmtpClientWrapper _client;
         private readonly MimeMessage _message;
         
-        public MailService(MailOptions mailOptions)
+        public MailService(MailOptions mailOptions, ISmtpClientWrapper client)
         {
-            _client = new SmtpClient();
+            _client = client;
             _message = new MimeMessage();
             
             _client.Connect(Server.Host, Server.Port, Server.UseSsl);
@@ -25,10 +24,6 @@ namespace Cli.Mail.Services
         public async Task Send()
         {
             await _client.SendAsync(_message);
-        }
-
-        public void Dispose()
-        {
             _client.Disconnect (true);
         }
 

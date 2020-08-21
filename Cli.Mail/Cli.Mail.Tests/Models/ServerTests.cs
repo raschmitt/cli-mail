@@ -12,6 +12,7 @@ namespace Cli.Mail.Tests.Models
             //Assert
             Server.Host.Should().NotBe(default);
             Server.Port.Should().NotBe(default);
+            Server.UseSsl.Should().BeFalse();
         }
     }
 }
